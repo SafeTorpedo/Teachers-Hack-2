@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import React from "react";
 // import ReactDOM from 'react-dom'
 import axios from "axios";
+import Hero from "./components/Hero";
 
 function App() {
     const reactData = [
@@ -20,6 +21,7 @@ function App() {
     return (
         <div className="App">
             <Navbar />
+            <Hero />
             <Form />
         </div>
     );
