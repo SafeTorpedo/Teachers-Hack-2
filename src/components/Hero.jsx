@@ -35,12 +35,13 @@ const Hero = () => {
                                         height="24"
                                     />
                                 </svg>
-                                <span className="relative">Project</span>
+                                <span className="relative">No</span>
                             </span>{" "}
-                            Tagline
+                            more messy handwritings!!
                         </h2>
                         <p className="text-base text-gray-700 md:text-lg">
-                            Project Description
+                            Get unclear handwriting converted to readable text
+                            and practice improving it
                         </p>
                     </div>
                     <div>
