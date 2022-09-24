@@ -1,5 +1,5 @@
 <h1>Letters at ease </h1>
-No more messy Handwritings.
+<img src="https://user-images.githubusercontent.com/100701261/192120215-71c58a66-c288-41f8-ae40-5dfdd79f93e1.png">
 
 <h3>Description</h3>
 Teachers have a lot of stuff to teach, they manage noisy children, take care of their homes and some other tedious tasks but the last thing they'd want to do is figure out messy handwriting of  kids. What if a kid's notebook looks more like scribbles than words, wouldn't it make you go - <i>ughhhhhh!</i> Here's a website that helps you read messy handwritings with ease by converting it to text. Also, Do teachers have to keep dealing with this always? No, because we're helping students to improve their handwriting by providing a space where they can practice it. 
