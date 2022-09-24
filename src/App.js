@@ -23,6 +23,10 @@ function App() {
             <Navbar />
             <Hero />
             <Form />
+            <form action="../../post" method="post"
+                className="form">
+                <button type="submit">Recognize</button>
+            </form>
         </div>
     );
 }
