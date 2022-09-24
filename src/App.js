@@ -2,25 +2,16 @@ import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 import React from "react";
 // import ReactDOM from 'react-dom'
-import axios from "axios";
 
 function App() {
-    const reactData = [
-        { id: 1, name: " Tom" },
-        { id: 2, name: " Sarah" },
-    ];
-    const url = "localhost:3000/api/users/register";
-    let sendData = () => {
-        axios
-            .post(url, reactData)
-            .then((res) => console.log("Data send"))
-            .catch((err) => console.log(err.data));
-    };
-    sendData();
     return (
         <div className="App">
             <Navbar />
             <Form />
+            <form action="../../post" method="POST"
+                className="form">
+                <button type="submit">Recognize</button>
+            </form>
         </div>
     );
 }
