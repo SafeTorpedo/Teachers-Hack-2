@@ -119,7 +119,7 @@ const Canvas = ({ width, height }) => {
                 width={width}
                 height={height}
                 onMouseDown={onCanvasMouseDown}
-                className = "canvs"
+                style={canvasStyle}
                 ref={setCanvasRef}
             />
             <a
@@ -135,3 +135,7 @@ const Canvas = ({ width, height }) => {
 
 export default Canvas;
 
+const canvasStyle = {
+    border: "1px solid black",
+    margin: "auto",
+};
