@@ -111,15 +111,15 @@ const Canvas = ({ width, height }) => {
     };
 
     return (
-        <div className="flex justify-center align-middle">
-            <div className="px-6 py-6 flex justify-center text-lg">
-                <h1>Student's Handwriritng Practice </h1>
-            </div>
+        <div className="canv">
+            {/* <div className="px-6 py-6 text-xl"> */}
+                <h1 className="px-6 py-6 text-xl">Student's Handwriritng Practice </h1>
+            {/* </div> */}
             <canvas
                 width={width}
                 height={height}
                 onMouseDown={onCanvasMouseDown}
-                style={canvasStyle}
+                className = "canvs"
                 ref={setCanvasRef}
             />
             <a
@@ -135,6 +135,3 @@ const Canvas = ({ width, height }) => {
 
 export default Canvas;
 
-const canvasStyle = {
-    border: "1px solid black",
-};
