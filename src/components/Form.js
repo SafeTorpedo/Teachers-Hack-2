@@ -3,7 +3,11 @@ import { useState } from "react";
 import React from "react";
 
 const Form = () => {
-    const [items, setItems] = useState({});
+    const [items, setItems] = useState();
+    const onImageChange = (e) => {
+        const [file] = e.target.files;
+        setItems(URL.createObjectURL(file))
+    }
 
     // useEffect(() => {
     //   localStorage.setItem('items', JSON.stringify(items));
@@ -28,11 +32,16 @@ const Form = () => {
                                     id="photo"
                                     name="photo"
                                     // value={items}
-                                    onChange={(e) => setItems(e.target.value)}
+                                    onChange={onImageChange}
                                     // autocomplete="song"
                                     // placeholder="Enter a Song"
                                     className=" placeholder:text-gray-600 mt-1 ml-auto p-6 block w-1/2  rounded-md border-red-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
+                                        <a href={items}
+                                    download="image"
+                                >
+                                    <img src={items} alt='' />
+                                </a>
                             </div>
                         </div>
                     </div>

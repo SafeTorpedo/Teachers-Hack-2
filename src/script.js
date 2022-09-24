@@ -1,17 +1,21 @@
-const vision = require('@google-cloud/vision');
-const express= require('express')
-const app=express()
-const url = 'localhost:3000/api/users/register';
-const usersData = [];
-let getData = () => {
-    axios.get(url)
-        .then(res => usersData.push(res.data))
-        .catch(err => console.log(err.data))
-}
-const CREDENTIALS = {
-    {CREDENTIALS JSON FILE HERE}
-}
 
+import { ImageAnnotatorClient } from '@google-cloud/vision';
+
+import express from 'express';
+import { unlink } from 'node:fs/promises';
+
+const app = express()
+// const url = 'localhost:3000/api/users/register';
+// const usersData = [];
+// let getData = () => {
+//     axios.get(url)
+//         .then(res => usersData.push(res.data))
+//         .catch(err => console.log(err.data))
+// }
+let flag = 0
+const CREDENTIALS = {
+    {YOUR CREDENTIALS HERE}
+}
 const CONFIG = {
     credentials: {
         private_key: CREDENTIALS.private_key,
@@ -19,35 +23,45 @@ const CONFIG = {
     }
 };
 
-const client = new vision.ImageAnnotatorClient(CONFIG);
+const client = new ImageAnnotatorClient(CONFIG);
 
-const detectLandmark = async (file_path) => {
-
-    let [result] = await client.landmarkDetection('landmarj_two.jpeg');
-    console.log(result.landmarkAnnotations[0].description);
-};
 
 const detectText = async (file_path) => {
 
     let [result] = await client.textDetection(file_path);
     console.log(result.fullTextAnnotation.text);
+    let data = result.fullTextAnnotation.text
+    wait(2)
+    try {
+        await unlink(file_path);
+        console.log('successfully deleted');
+    } catch (error) {
+        console.error('there was an error:', error.message);
+    }
+
+    return data
 };
 
-app.get('/',(req,res)=>{
-    res.send("Hello World!")
+app.get('/', (req, res) => {
+    res.send(localStorage.getItem('photo'))
+    console.log(localStorage.getItem('photo'))
 })
 
-app.get('/api/users/register',(req,res)=>{
-    getData('/api/users/register')
-})
 
-app.post('/post',(req,res)=>{
+
+app.post('/post', async (_req, res) => {
+    flag = 1
+    if (flag == 1) {
+        data = detectText('C:/Users/kushl/Downloads/image.png');
+        res.send(data)
+    }
     console.log("Connected to React")
-    res.redirect('/')
+
+    res.redirect('/bruh')
 })
 
 
 
 const PORT = process.env.PORT || 8080
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
-detectText('../handwritten3.jpg');
+
