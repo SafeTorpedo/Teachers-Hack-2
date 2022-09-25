@@ -13,7 +13,7 @@ const Form = () => {
         localStorage.setItem("photo", items);
     };
     return (
-        <div className="md:col-span-2 md: text-center py-10">
+        <div className="mt-[-36px] md:col-span-2 md:text-center py-10">
             <form action="../../post" method="post" className="form">
                 <div className="overflow-hidden shadow sm:rounded-md">
                     <div className=" px-4 py-5 sm:p-6">
@@ -24,7 +24,7 @@ const Form = () => {
                                     id="photo"
                                     name="photo"
                                     onChange={onImageChange}
-                                    className="mt-1 ml-auto justify-center p-6 block rounded-md border-red-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 ml-auto bg-yellow-300 justify-center p-6 block rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                                         <a href={items}
                                     download="image"

@@ -10,7 +10,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* .canv{
-    text-align: center;
-    background:url(../src/assets/background.png);
-} */
+
+@media(max-width: 600px){
+    .canv{
+        width: 100%;
+    }
+}
+
