@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Letters at Ease | Recognized Text</title>
+        <style>
+            .body{
+                background-image: url("../assets/background.png");
 
-<head>
-    <title>Handlebars Demo</title>
-</head>
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+                font-size: 1.5em;
+                line-height: 1.5em;
+                justify-content: center;
+                background-size: cover;
+                justify-content: center;
+                margin-top: 20%;
+            }
 
-<body>
-    <h2>{{value}}</h2>
-</body>
+            .text{
+                text-align: center;
+            }
+        </style>
+    </head>
 
+    <body class="body">
+        <h3 class="text">Recognized handwriting from uploaded Image: <br/><br/> {{value}}</h3>
+    </body>
 </html>
