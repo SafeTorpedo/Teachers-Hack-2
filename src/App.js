@@ -12,9 +12,6 @@ function App() {
             <Navbar />
             <Hero />
             <Form />
-            <form action="../../post" method="post" className="form">
-                <button type="submit">Recognize</button>
-            </form>
             <Canvas width={700} height={500} />
         </div>
     );
