@@ -45,6 +45,7 @@ function Navbar() {
                                     </a>
 
                                     <a
+                                        rel="noreferrer"
                                         href="https://github.com/SafeTorpedo/Teachers-Hack-2"
                                         target={"_blank"}
                                         className="text-gray-300 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -145,6 +146,7 @@ function Navbar() {
                                 </a>
 
                                 <a
+                                    rel="noreferrer"
                                     href="https://github.com/SafeTorpedo/Teachers-Hack-2"
                                     target={"_blank"}
                                     className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
