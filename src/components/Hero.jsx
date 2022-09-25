@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import intro from "../assets/intro.gif";
 
 const Hero = () => {
     return (
@@ -6,8 +6,8 @@ const Hero = () => {
             <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                 <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
                     <a href="/" className="mb-6 sm:mx-auto">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-inherit">
-                            <img src={logo} alt="logo" />
+                        <div className="flex items-center justify-center w-24 h-24 rounded-full bg-inherit">
+                            <img src={intro} alt="logo" />
                         </div>
                     </a>
                     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
