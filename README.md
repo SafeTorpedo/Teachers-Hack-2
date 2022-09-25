@@ -28,7 +28,7 @@ Students can practice their handwriting in the drawing space provided and can im
 <li>Backend using NodeJS and modules such as nodemon, handlebars, and the google cloud vision API.</li>
 </ul>
 
-[Checkout the Demo](https://www.youtube.com/watch?v=IjQ-zDLSXmk&t=84s)
+[Checkout the Demo](https://www.youtube.com/watch?v=IjQ-zDLSXmk&t=84s)</br>
 [Link to the website - Letters at ease](https://letters-at-ease.study/)
 
 ![InShot_20220925_152249276](https://user-images.githubusercontent.com/100701261/192138111-50dc4b46-46ff-4e1e-a517-59edee79b8e6.gif)
