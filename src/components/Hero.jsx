@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg";
 
 const Hero = () => {
     return (
-        <div className="bg-center bg-flex flex-auto bg-cover bg-[url(../src/assets/background.png)]  px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24">
+        <div className="bg-center mt-8 bg-flex flex-auto bg-cover px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24">
             <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                 <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
                     <a href="/" className="mb-6 sm:mx-auto">

@@ -6,14 +6,14 @@ const Form = () => {
     const [items, setItems] = useState();
     const onImageChange = (e) => {
         const [file] = e.target.files;
-        setItems(URL.createObjectURL(file))
-    }
+        setItems(URL.createObjectURL(file));
+    };
 
     const handle = () => {
         localStorage.setItem("photo", items);
     };
     return (
-        <div className="mt-[-36px] md:col-span-2 md:text-center py-10">
+        <div className="mt-[-36px] md:col-span-2 md:text-center py-28">
             <form action="../../post" method="post" className="form">
                 <div className="overflow-hidden shadow sm:rounded-md">
                     <div className=" px-4 py-5 sm:p-6">
@@ -26,10 +26,8 @@ const Form = () => {
                                     onChange={onImageChange}
                                     className="mt-1 ml-auto bg-yellow-300 justify-center p-6 block rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
-                                        <a href={items}
-                                    download="image"
-                                >
-                                    <img src={items} alt='' />
+                                <a href={items} download="image">
+                                    <img src={items} alt="" />
                                 </a>
                             </div>
                         </div>
@@ -40,7 +38,7 @@ const Form = () => {
                             type="submit"
                             className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
-                           Recognize
+                            Recognize
                         </button>
                     </div>
                 </div>
