@@ -24,21 +24,21 @@ function Navbar() {
                                     </div>
 
                                     <a
-                                        href="#"
+                                        href="#teachers"
                                         className="text-gray-300 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Teachers
                                     </a>
 
                                     <a
-                                        href="#"
+                                        href="#students"
                                         className="text-gray-300 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Students
                                     </a>
 
                                     <a
-                                        href="#"
+                                        href="#about"
                                         className="text-gray-300 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         About us
@@ -124,28 +124,29 @@ function Navbar() {
                                 </div>
 
                                 <a
-                                    href="#"
+                                    href="#teachers"
                                     className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Teachers
                                 </a>
 
                                 <a
-                                    href="#"
+                                    href="#students"
                                     className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Students
                                 </a>
 
                                 <a
-                                    href="#"
+                                    href="#about"
                                     className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     About us
                                 </a>
 
                                 <a
-                                    href="#"
+                                    href="https://github.com/SafeTorpedo/Teachers-Hack-2"
+                                    target={"_blank"}
                                     className="text-gray-300 hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Github Repo

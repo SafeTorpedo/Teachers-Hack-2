@@ -116,7 +116,10 @@ const Canvas = ({ width, height }) => {
     };
 
     return (
-        <div className=" mt-[-36px] bg-center bg-flex flex-auto bg-cover bg-[url(../src/assets/background.png)]  px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24">
+        <div
+            id="students"
+            className=" mt-[-36px] bg-center bg-flex flex-auto bg-cover bg-[url(../src/assets/background.png)]  px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24"
+        >
             <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                 <h1 className="px-6 py-6 text-xl text-center">
                     Student's Handwriting Practice{" "}

@@ -13,7 +13,10 @@ const Form = () => {
         localStorage.setItem("photo", items);
     };
     return (
-        <div className="mt-[-36px] md:col-span-2 md:text-center py-28">
+        <div
+            id="teachers"
+            className="mt-[-36px] md:col-span-2 md:text-center py-28"
+        >
             <form action="../../post" method="post" className="form">
                 <div className="overflow-hidden shadow sm:rounded-md">
                     <div className=" px-4 py-5 sm:p-6">

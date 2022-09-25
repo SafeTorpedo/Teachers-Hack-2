@@ -37,16 +37,18 @@ const Hero = () => {
                                 </svg>
                                 <span className="relative">No</span>
                             </span>{" "}
-                            more messy handwritings!!
+                            more messy handwritings!! Welcome to Letters at Ease
                         </h2>
                         <p className="text-base text-gray-700 md:text-lg">
-                            Get unclear handwriting converted to readable text
-                            and practice improving it
+                            -{">"} Teachers can get unclear handwriting of
+                            students converted to readable text
+                            <br />-{">"} Students can practice their handwriting
+                            with ease (still in development)
                         </p>
                     </div>
                     <div>
                         <a
-                            href="/"
+                            href="#teachers"
                             className=" items-center inline-flex justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
                             For Teachers
