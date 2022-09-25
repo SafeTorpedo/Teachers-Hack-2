@@ -122,7 +122,7 @@ const Canvas = ({ width, height }) => {
         >
             <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                 <h1 className="px-6 py-6 text-xl text-center">
-                    Student's Handwriting Practice{" "}
+                    Student's Handwriting Practice (Under development)
                 </h1>
 
                 <canvas
