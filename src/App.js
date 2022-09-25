@@ -5,6 +5,7 @@ import React from "react";
 // import axios from "axios";
 import Hero from "./components/Hero";
 import Canvas from "./components/Canvas";
+import About from "./components/About";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Hero />
             <Form />
             <Canvas width={700} height={500} />
+            <About />
         </div>
     );
 }
