@@ -110,6 +110,11 @@ const Canvas = ({ width, height }) => {
         link.setAttribute("href", image);
     };
 
+    const setToClear = () => {
+        const ctx = canvasRef.current.getContext("2d");
+        ctx.clearRect(0, 0, width, height);
+    };
+
     return (
         <div className=" mt-[-36px] bg-center bg-flex flex-auto bg-cover bg-[url(../src/assets/background.png)]  px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24">
             <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -125,6 +130,16 @@ const Canvas = ({ width, height }) => {
                     style={canvasStyle}
                     ref={setCanvasRef}
                 />
+
+                <div>
+                    <button
+                        onClick={setToClear}
+                        className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 mt-6 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    >
+                        Clear
+                    </button>
+                </div>
+
                 <div className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 mt-6 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                     <a
                         id="download_image_link"
