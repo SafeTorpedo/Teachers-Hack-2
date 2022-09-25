@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Teachers-Hack-2/static/css/main.75a28ed8.css",
+    "main.js": "/Teachers-Hack-2/static/js/main.14c69e80.js",
+    "static/js/787.996a08c3.chunk.js": "/Teachers-Hack-2/static/js/787.996a08c3.chunk.js",
+    "static/media/Mamtha.png": "/Teachers-Hack-2/static/media/Mamtha.b530ea6a91c1d2abe29e.png",
+    "static/media/Kaushik.jpg": "/Teachers-Hack-2/static/media/Kaushik.626e4c116d7e3cee0ed8.jpg",
+    "static/media/intro.gif": "/Teachers-Hack-2/static/media/intro.c8c38bb50f1e8e2c6cf6.gif",
+    "static/media/background.png": "/Teachers-Hack-2/static/media/background.991b90ea5b85e66dc44e.png",
+    "static/media/Oluwajuwonlo.jpg": "/Teachers-Hack-2/static/media/Oluwajuwonlo.263e62f81b43f303efa1.jpg",
+    "static/media/Pratham.jpg": "/Teachers-Hack-2/static/media/Pratham.44a08f12d5705af589d0.jpg",
+    "static/media/logo.svg": "/Teachers-Hack-2/static/media/logo.40048c090ba2ee3083a293fa43392790.svg",
+    "index.html": "/Teachers-Hack-2/index.html",
+    "main.75a28ed8.css.map": "/Teachers-Hack-2/static/css/main.75a28ed8.css.map",
+    "main.14c69e80.js.map": "/Teachers-Hack-2/static/js/main.14c69e80.js.map",
+    "787.996a08c3.chunk.js.map": "/Teachers-Hack-2/static/js/787.996a08c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75a28ed8.css",
+    "static/js/main.14c69e80.js"
+  ]
+}
