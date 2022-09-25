@@ -111,24 +111,28 @@ const Canvas = ({ width, height }) => {
     };
 
     return (
-        <div className="canv">
-            {/* <div className="px-6 py-6 text-xl"> */}
-                <h1 className="px-6 py-6 text-xl">Student's Handwriritng Practice </h1>
-            {/* </div> */}
+        <div className="bg-center bg-flex flex-auto bg-cover bg-[url(../src/assets/background.png)]  px-4 py-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-screen-full  md:px-24 lg:px-8 lg:py-24">
+            <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+                <h1 className="px-6 py-6 text-xl text-center">Student's Handwriting Practice </h1>
+            
             <canvas
+            className="max-w-xl sm:mx-auto w-fit lg:max-w-2xl"
                 width={width}
                 height={height}
                 onMouseDown={onCanvasMouseDown}
                 style={canvasStyle}
                 ref={setCanvasRef}
             />
-            <a
-                id="download_image_link"
-                href="download_link"
-                onClick={saveImageToLocal}
-            >
-                Download
-            </a>
+            <div  className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 mt-6 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"  >
+                <a
+                    id="download_image_link"
+                    href="download_link"
+                    onClick={saveImageToLocal}
+                >
+                    Download
+                </a>
+            </div>
+            </div>
         </div>
     );
 };
@@ -138,4 +142,5 @@ export default Canvas;
 const canvasStyle = {
     border: "1px solid black",
     margin: "auto",
+    background: "white"
 };
