@@ -9,6 +9,7 @@ Teachers have a lot of stuff to teach, they manage noisy children, take care of 
 The website allows the users to upload images of messy handwriting. It recognizes the letters in the image and converts them to readable text with the help of an API. This saves the time and is easy to use.
 
 <b><u>For Students</b></u>
+Students can practice their handwriting in the drawing space provided and can improve it.
 
 <h3>How to Use </h3>
 
@@ -17,11 +18,16 @@ The website allows the users to upload images of messy handwriting. It recognize
 <li>Upload an image containing Handwritten script </li>
 <li>Handwriting is converted to Text and displayed </li>
 </ul>
+<b>Practice Handwriting:</b>
+<ul><li>Students can draw and practice their handwriting in the drawing space.</li></ul>
 
 <h3>Technology Used</h3>
 <ul>
-<li>Frontend pages, components, and forms were created using React.</li>
-<li>Backend</li>
+<li>Frontend using React and Tailwind CSS.</li>
+  <li>Designs using Adobe Illustrator.</li>
+<li>Backend using NodeJS and modules such as nodemon, handlebars, and the google cloud vision API.</li>
 </ul>
+
+
 
 
