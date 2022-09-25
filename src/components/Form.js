@@ -15,7 +15,7 @@ const Form = () => {
     return (
         <div
             id="teachers"
-            className="mt-[-36px] md:col-span-2 md:text-center py-28"
+            className=" md:col-span-2 md:text-center py-28"
         >
             <form action="../../post" method="post" className="form">
                 <div className="overflow-hidden shadow sm:rounded-md">
